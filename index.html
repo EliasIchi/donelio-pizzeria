@@ -19,12 +19,59 @@
             max-width: 100%;
             height: auto;
         }
+        .product-images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-images img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .social-buttons {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .social-buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 50%;
+            background-color: #333;
+            color: white;
+            font-size: 20px;
+            transition: background-color 0.3s;
+        }
+        .social-buttons a:hover {
+            background-color: #555;
+        }
     </style>
 </head>
 <body>
     <div class="menu-container">
         <h1>Menú de Comida</h1>
-        <img src="https://raw.githubusercontent.com/EliasIchi/donelio-pizzeria/refs/heads/main/don_elio_volante.jpg" alt="Menú de comida">
+        <img src="https://raw.githubusercontent.com/EliasIchi/donelio-pizzeria/0021901bd119d6fc4050115a99243d935315db00/don_elio_volante.jpeg" alt="Menú de comida">
+    </div>
+
+    <div class="product-images">
+        <img src="https://via.placeholder.com/400x300?text=Producto+1" alt="Producto 1">
+        <img src="https://via.placeholder.com/400x300?text=Producto+2" alt="Producto 2">
+        <img src="https://via.placeholder.com/400x300?text=Producto+3" alt="Producto 3">
+        <img src="https://via.placeholder.com/400x300?text=Producto+4" alt="Producto 4">
+        <img src="https://via.placeholder.com/400x300?text=Producto+5" alt="Producto 5">
+        <img src="https://via.placeholder.com/400x300?text=Producto+6" alt="Producto 6">
+        <img src="https://via.placeholder.com/400x300?text=Producto+7" alt="Producto 7">
+        <img src="https://via.placeholder.com/400x300?text=Producto+8" alt="Producto 8">
+    </div>
+
+    <div class="social-buttons">
+        <a href="https://www.instagram.com" target="_blank">📷</a>
+        <a href="https://www.facebook.com" target="_blank">📘</a>
+        <a href="https://wa.me/1234567890" target="_blank">💬</a>
     </div>
 </body>
 </html>
