@@ -65,16 +65,29 @@
 
     </div>
 
-    <div class="social-buttons">
-        <a href="https://www.instagram.com/doneliopizzeria/" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-        </a>
-        <a href="https://www.facebook.com/elbuenmorfioficial/" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
-        </a>
-        <a href="https://api.whatsapp.com/send?phone=541170667389" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/WhatsApp.svg" alt="WhatsApp">
-        </a>
-    </div>
-</body>
-</html>
+<div class="social-buttons">
+    <a href="https://www.instagram.com/doneliopizzeria/" target="_blank" class="social-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+    </a>
+    <a href="https://www.facebook.com/elbuenmorfioficial/" target="_blank" class="social-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+    </a>
+    <a href="https://api.whatsapp.com/send?phone=541170667389" target="_blank" class="social-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/WhatsApp.svg" alt="WhatsApp">
+    </a>
+</div>
+
+<style>
+    .social-buttons {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .social-btn {
+        display: inline-block;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transf
