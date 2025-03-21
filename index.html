@@ -27,7 +27,8 @@
         }
         .product-images img {
             width: 100%;
-            height: auto;
+            height: 300px; /* Asegura un tamaño uniforme para las imágenes de productos */
+            object-fit: cover; /* Mantiene la relación de aspecto pero recorta las imágenes si es necesario */
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
@@ -39,7 +40,7 @@
         }
         .social-buttons a {
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 10px;
             border-radius: 50%;
             background-color: #333;
             color: white;
@@ -49,20 +50,35 @@
         .social-buttons a:hover {
             background-color: #555;
         }
+        /* Ajuste para los íconos de las redes sociales */
+        .social-buttons img {
+            width: 40px; /* Tamaño estándar para los íconos de las redes sociales */
+            height: 40px;
+            object-fit: contain;
+        }
+
+        /* Responsividad para dispositivos móviles */
+        @media (max-width: 768px) {
+            .product-images {
+                grid-template-columns: 1fr; /* Una columna en móviles */
+            }
+            .social-buttons {
+                gap: 10px;
+            }
+            .social-buttons img {
+                width: 30px; /* Ajusta el tamaño de los íconos en móviles */
+                height: 30px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="menu-container">
         <h1>Menú de Comida</h1>
         <img src="https://raw.githubusercontent.com/EliasIchi/donelio-pizzeria/refs/heads/main/frente_19_03_25.jpg" alt="Menú de comida">
-                <img src="https://raw.githubusercontent.com/EliasIchi/donelio-pizzeria/refs/heads/main/bebidas.jpg" alt="Menú de comida">
-
-                        <img src="https://raw.githubusercontent.com/EliasIchi/donelio-pizzeria/refs/heads/main/POSTRES.jpeg" alt="Menú de comida">
-
-                <img src="https://raw.githubusercontent.com/EliasIchi/donelio-pizzeria/refs/heads/main/dorso.jpg" alt="Menú de comida">
-
-
-
+        <img src="https://raw.githubusercontent.com/EliasIchi/donelio-pizzeria/refs/heads/main/bebidas.jpg" alt="Menú de comida">
+        <img src="https://raw.githubusercontent.com/EliasIchi/donelio-pizzeria/refs/heads/main/POSTRES.jpeg" alt="Menú de comida">
+        <img src="https://raw.githubusercontent.com/EliasIchi/donelio-pizzeria/refs/heads/main/dorso.jpg" alt="Menú de comida">
     </div>
 
     <div class="product-images">
@@ -70,32 +86,18 @@
         <img src="https://raw.githubusercontent.com/EliasIchi/donelio-pizzeria/refs/heads/main/2.jpeg" alt="Producto 2">
         <img src="https://raw.githubusercontent.com/EliasIchi/donelio-pizzeria/refs/heads/main/3.jpeg" alt="Producto 3">
         <img src="https://raw.githubusercontent.com/EliasIchi/donelio-pizzeria/refs/heads/main/4.jpeg" alt="Producto 4">
-
     </div>
 
-<div class="social-buttons">
-    <a href="https://www.instagram.com/doneliopizzeria/" target="_blank" class="social-btn">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-    </a>
-    <a href="https://www.facebook.com/elbuenmorfioficial/" target="_blank" class="social-btn">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
-    </a>
-    <a href="https://api.whatsapp.com/send?phone=541170667389" target="_blank" class="social-btn">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/WhatsApp.svg" alt="WhatsApp">
-    </a>
-</div>
-
-<style>
-    .social-buttons {
-        margin-top: 40px;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-    }
-    .social-btn {
-        display: inline-block;
-        padding: 10px;
-        border-radius: 50%;
-        background-color: #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transf
+    <div class="social-buttons">
+        <a href="https://www.instagram.com/doneliopizzeria/" target="_blank" class="social-btn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/elbuenmorfioficial/" target="_blank" class="social-btn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=541170667389" target="_blank" class="social-btn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/WhatsApp.svg" alt="WhatsApp">
+        </a>
+    </div>
+</body>
+</html>
